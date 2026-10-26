@@ -1,0 +1,17 @@
+[package]
+name = "sigmaos-memory"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "Memory management and thermal control"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-memory"
+readme = "README.md"
+keywords = ["memory", "swap", "thermal"]
+categories = ["os"]
+
+[dependencies]
+sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
+
+[profile.release]
+opt-level = 3
