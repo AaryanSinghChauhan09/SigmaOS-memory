@@ -1,8 +1,13 @@
-# SigmaOS-memory
+# SigmaOS Memory
 
-This repository is a SigmaOS component checkout. Its implementation scope and integration status are tracked in the central SigmaOS component registry.
+This crate exports a `MemoryManager` and organizes APIs under `memory`, `swap`,
+and `thermal` modules. The repository contains a broad set of memory-management
+source files; this top-level API alone does not establish that the code is
+integrated with a booted kernel, safely managing physical pages, or enforcing
+thermal limits on hardware. Check each subsystem's implementation and platform
+evidence before relying on it.
 
-## Development
+## License
 
-Review the repository history and existing source-level checks before changing behavior. Keep changes focused, document user-visible workflows, and update the central registry only when implementation evidence supports a status change.
+See [`LICENSE`](LICENSE) and [`Cargo.toml`](Cargo.toml).
 
