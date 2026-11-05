@@ -1,0 +1,16 @@
+[component]
+name = "SigmaOS-memory"
+tier = 0
+stability = "scaffold"
+language = "rust"
+description = "Physical frame allocator, virtual address space manager, slab allocator, and W^X memory protection"
+upstream = ["https://github.com/rust-osdev/bootloader"]
+
+[contract]
+provides = ["frame-allocator", "virtual-memory-manager", "slab-allocator"]
+depends_on = []
+
+[maturity]
+status = "Scaffold"
+test_evidence = "Compiles and passes AAA unit tests"
+next_milestone = "Hardware and runtime integration"

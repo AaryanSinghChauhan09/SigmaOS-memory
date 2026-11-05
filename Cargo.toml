@@ -1,17 +1,9 @@
 [package]
-name = "sigmaos-memory"
+name = "sigmaos_memory"
 version = "0.1.0"
 edition = "2021"
-authors = ["SigmaOS Project"]
-description = "Memory management and thermal control"
-license = "GPL-3.0-or-later"
-repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-memory"
-readme = "README.md"
-keywords = ["memory", "swap", "thermal"]
-categories = ["os"]
+description = "Physical frame allocator, virtual address space manager, slab allocator, and W^X memory protection"
 
-[dependencies]
-sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
-
-[profile.release]
-opt-level = 3
+[lib]
+name = "sigmaos_memory"
+path = "src/lib.rs"
