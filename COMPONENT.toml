@@ -3,12 +3,12 @@ name = "SigmaOS-memory"
 tier = 0
 stability = "scaffold"
 language = "rust"
-description = "Physical frame allocator, virtual address space manager, slab allocator, and W^X memory protection"
+description = "Memory component for SigmaOS"
 upstream = ["https://github.com/rust-osdev/bootloader"]
 
 [contract]
 provides = ["frame-allocator", "virtual-memory-manager", "slab-allocator"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
