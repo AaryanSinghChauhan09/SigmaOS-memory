@@ -1,9 +1,15 @@
 [package]
-name = "sigmaos_memory"
+name = "SigmaOS-memory"
 version = "0.1.0"
 edition = "2021"
-description = "Physical frame allocator, virtual address space manager, slab allocator, and W^X memory protection"
+license = "Apache-2.0"
+description = "SigmaOS sigmaos_memory component"
 
 [lib]
 name = "sigmaos_memory"
 path = "src/lib.rs"
+
+[dependencies]
+thiserror = "1"
+
+[dev-dependencies]
